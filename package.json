@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "dev": "webpack serve"
+    "dev": "webpack serve",
+    "tailwatch": "npx tailwindcss -i ./src/styles/twinput.css -o ./src/styles/twoutput.css --watch"
   },
   "author": "Ummam Ali",
   "license": "MIT",
@@ -17,6 +18,7 @@
     "html-webpack-plugin": "^5.6.3",
     "mini-css-extract-plugin": "^2.9.2",
     "style-loader": "^4.0.0",
+    "tailwindcss": "^3.4.14",
     "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.1.0"
